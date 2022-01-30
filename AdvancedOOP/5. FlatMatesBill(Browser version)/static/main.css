@@ -1,0 +1,47 @@
+h1 {
+    color: DarkSlateGrey;
+    text-align: center;
+    font-family: Verdana;
+    font-size: 50px;
+}
+
+p {
+    color: DarkSlateBlue;
+    font-weight: Bold;
+    font-size: 30px;
+    font-family: Verdana;
+    text-align: center;
+}
+
+a {
+    width: 100%;
+    color: hotpink;
+    font-size: 35px;
+    font-family: Verdana;
+    text-decoration: underline;
+    text-align: center;
+}
+
+/* styles the forms */
+input[type=text] {
+    width: 100%;
+    /*padding adds space b/w text & input box*/
+    padding: 8px 8px; /* vertical and horizontal */
+    margin: 10px 0px /* margin adds space b/w input box and label */
+
+}
+/* styles the button */
+input[type=submit] {
+    width: 100%;
+    background-color: black; /*button color*/
+    color: Linen; /*text color of button*/
+    font-size: 25px;
+    padding: 10px 0px; /* vertical and horizontal */
+    border: none;
+    border-radius: 90px; /* rounds the corners */
+}
+
+body {
+    background-color: GhostWhite;
+    padding: 25px; /* if you give only one value it take it as x(horizontal) */
+}

@@ -1,0 +1,15 @@
+Title: Calorie calculator
+Description: The web app that gets user's weight, height, age,
+city and country and scrapes the temperature of user's location
+and calculates how much calorie they needed
+Objects:
+    Calorie:
+        weight
+        height
+        age
+        temperature
+        calculate()
+    Temperature:
+        city
+        country
+        get_temperature()

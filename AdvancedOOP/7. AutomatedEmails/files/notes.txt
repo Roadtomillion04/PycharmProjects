@@ -1,0 +1,28 @@
+We can get news from the website by
+1. web scrapping
+2. news api
+
+However, new api are better because it's less likely to break
+when the web page is updated
+
+Use debugger to see the better view of scrapped raw data (json)
+
+ctrl+p to see the arguments of a class or a method
+
+yagmail works only for gmail accounts
+
+Before sending mail make sure less secure apps is on
+
+pd.read_excel() Supports xls, xlsx, xlsm, xlsb, odf, ods and odt file extensions
+
+Gives today date         timedelta is used to subtract time difference
+datetime.date.today() - datetime.timedelta(days=1),
+
+datetime follows international clock 0 - 23
+
+_method() is private method
+used by other methods
+not outside a class
+
+you can copy lines and press ctrl + alt + m to create the function
+this will return and assign a variable to it

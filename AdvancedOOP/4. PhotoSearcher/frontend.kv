@@ -1,0 +1,23 @@
+<FirstScreen>:  # name should be same as declared class name
+    GridLayout:
+        cols: 1 # 1 column in canvas
+        padding: 10 # separates widgets from screen size
+        spacing: 10 # separates widgets bt given value
+
+        # rows / widgets
+        Image:
+            id: img # id must be unique, we can access widgets only with id in backend
+            size_hint_y: 0.80 # expects weight adds up to 1
+        TextInput:
+            id: user_query
+            size_hint_y: 0.08
+        Button:
+            text: 'Search Image'
+            size_hint_y: 0.12
+            on_press: root.set_image() # in kivi we call root instead self
+            # root creates an instance of parent class and calls it
+
+<RootWidget>:
+    FirstScreen:
+        id: first_screen # id should not be in string
+        name: 'first_screen'

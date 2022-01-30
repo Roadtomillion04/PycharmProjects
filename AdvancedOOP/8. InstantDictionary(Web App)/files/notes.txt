@@ -1,0 +1,55 @@
+Overall web development is adding own attribute in frontend
+and using them in backend interchangeably
+
+just py is a framework we can build frontend using python
+so that we can do full stack only with python script 😊
+
+to add url to a function we can
+1. jp.Route('/exe', func_name)
+2. using decorator - @jp.SetRoute('/exe') top of the func
+
+the styling of justpy classes uses tailwindcss library
+
+the just py has all tag attributes same as HTML
+you want just search HTML attributes and pass it in jp.tag()
+
+important point
+
+when splitting classes string make sure to leave a space before end of the string in above line
+i.e
+(.., classes = "border-color-400 ",
+                      "text-color-500")
+
+Don't leave a space in actions of classes like
+classes= 'hover: bg-white' --> doesn't work
+
+we use
+hierarchy/tree workflow in just py to arrange elements in div container
+
+In classes use 'border border-attr'
+first border set it to true
+
+We can't parallel run in just py as the port is static
+
+For styling use class code of tailwind css
+
+use debugger to find non-working or errors
+
+we can create custom attribute inside any tags
+and use it them for backend
+
+if you want to add properties everytime you have to call it
+hover:bg-white hover:text-color
+
+if you want to take actions use event handler
+we can't do everything with classes as it is only for styling
+if classes doesn't work create event handler function
+
+event handler func instance variable is predefined inside tags
+
+Quasar Page is a webpage interface
+which provides additional advanced components
+
+As we are creating classes for each domain/exe
+Think QuasarPage() class as visual page has HTML & CSS
+and our class as Routing connecting to visual page

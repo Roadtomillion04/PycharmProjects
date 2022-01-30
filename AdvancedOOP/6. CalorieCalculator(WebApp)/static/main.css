@@ -1,0 +1,30 @@
+h1 {
+    color: DarkSlateGrey;
+    font-size: 50px;
+    font-family: Verdana;
+    text-align: center;
+}
+
+p {
+    color: Beige;
+    font-family: Verdana;
+    font-weight: Bold;
+    text-align: center;
+    font-size: 30px;
+
+}
+
+a {
+    color: AquaMarine;
+    font-family: Verdana;
+    font-style: underline;
+    text-align: center;
+    font-size: 30px;
+
+}
+
+body {
+    background-color: Black;
+           /* y      x */
+    padding: 250px 20px;
+}

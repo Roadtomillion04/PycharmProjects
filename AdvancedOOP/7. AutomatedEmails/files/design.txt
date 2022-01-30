@@ -1,0 +1,16 @@
+Title: Automated Emails
+Description: An App that sends email(news feed) to the users based on their
+own interest from an Excel file
+Objects:
+    Email:
+        sender
+        receiver
+        subject
+        body
+        send()
+    NewsFeed:
+        data
+        get_news()
+    ExcelFile:
+        filepath
+        get_data()

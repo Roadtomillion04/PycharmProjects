@@ -1,0 +1,76 @@
+<CameraScreen>: # name has to be same as class name
+    GridLayout:
+        cols: 1
+        padding: 10
+        spacing: 10
+
+        # in-built kivy Widgets
+        Camera: # requires cv2
+            id: camera
+            resolution: (640, 480)
+            size_hint_y: 0.8 # weight should add up to 1
+            play: False # make sure play is down, don't put it on top
+        Button:
+            id: camera_button
+            text: 'start camera'
+            size_hint_y: 0.1
+                     # parent root in kivy & self in python
+            on_press: root.start_webcam() if root.ids.camera.play == False else root.stop_webcam()
+            # To change the layout of button        # if not doesn't works
+            background_normal: 'button_images/normal.png'
+            background_down: 'button_images/press.png'
+        Button:
+            text: 'capture'
+            size_hint_y: 0.1
+            on_press: root.capture()
+            background_normal: 'button_images/normal.png'
+            background_down: 'button_images/press.png'
+
+<ImageScreen>:
+    GridLayout:
+        cols: 1
+        padding: 10
+        spacing: 10
+
+        Image:
+            id: image_display
+            size_hint_y: 0.6
+        Button:
+            text: 'create sharable link'
+            size_hint_y: 0.1
+            on_press: root.create_link()
+            background_normal: 'button_images/normal.png'
+            background_down: 'button_images/press.png'
+        Label: # remember label widgets are not selectable
+            id: link
+            text: ''
+            size_hint_y: 0.1
+
+        # At bottom H-container splits equally by-default
+        GridLayout:
+            cols: 2
+            size_hint_y: 0.1
+
+
+            Button:
+                text: 'copy link'
+                on_press: root.copy_link()
+                background_normal: 'button_images/normal.png'
+                background_down: 'button_images/press.png'
+            Button:
+                text: 'open link'
+                on_press: root.open_link()
+                background_normal: 'button_images/normal.png'
+                background_down: 'button_images/press.png'
+
+
+
+# Without this Screen won't display
+<RootWidget>:
+    CameraScreen:
+        id: camera_screen
+        name: 'camera_screen'
+
+    ImageScreen:
+        id: image_screen
+        name: 'image_screen'

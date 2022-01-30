@@ -1,0 +1,57 @@
+h1 {
+    color: DarkSlateGrey;
+    font-size: 50px;
+    font-family: Verdana;
+    text-align: center;
+}
+
+p {
+    color: Beige;
+    font-size: 25px;
+    font-family: Verdana;
+    font-weight: Bold;
+    text-align: center;
+}
+
+/* input box label */
+label {
+    color: GhostWhite;
+    font-weight: Bold;
+    font-family: Verdana;
+    padding: 0px 620px; /* if text align - center doesnt work's use padding */
+    font-size: 30px;
+}
+
+
+/* if we didn't use wtforms we use input tag to get inputs in HTML*/
+input[type=text] {
+    width: 100%;
+    background-color: AliceBlue;
+    font-family: Verdana;
+    font-weight: Bold;
+    font-size: 32px;
+    padding: 12px 0px;
+    margin: 10px 0px;
+    border: none;
+    border-radius: 90px;
+    text-align: center;
+}
+
+
+input[type=submit] {
+    width: 100%;
+    background-color: AquaMarine;
+    color: DarkSlateGray; /*text color of button*/
+    font-family: Verdana;
+    font-weight: Bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 90px;
+    padding: 20px 0px;
+}
+
+
+body {
+    background-color: Black;
+    padding: 50px; /* if you give only one value it take it as x(horizontal) */
+}

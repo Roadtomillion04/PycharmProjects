@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="static/main.css">
+</head>
+<body>
+<h1>Bill Form Page</h1>
+<p>Fill the below form and click submit to get results</p>
+<form action="/results" method="post">
+    <!-- normally these are input tags but as we used wtforms as input we didn't use input tag here-->
+    {{bill_form.amount.label}} {{bill_form.amount}}
+    <br> <!-- break tag new line -->
+    {{bill_form.period.label}} {{bill_form.period}}
+    <hr> <!-- draws line -->
+
+    <p>First Flatmate</p>
+    {{bill_form.name1.label}} {{bill_form.name1}}
+    <br>
+    {{bill_form.days_stayed1.label}} {{bill_form.days_stayed1}}
+
+    <hr> <!-- Second flatmate -->
+    <p>Second Flatmate</p>
+    {{bill_form.name2.label}} {{bill_form.name2}}
+    <br>
+    {{bill_form.days_stayed2.label}} {{bill_form.days_stayed2}}
+
+    <br> <!-- Submit Button -->
+    {{bill_form.button}}
+
+</form>
+</body>
+</html>

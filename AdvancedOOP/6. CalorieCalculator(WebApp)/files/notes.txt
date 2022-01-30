@@ -1,0 +1,33 @@
+For the webpages that not allow to scrape their information by python script
+
+headers = {
+    'pragma': 'no-cache',
+    'cache-control': 'no-cache',
+    'dnt': '1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': 'Mozilla/5.0 (X11; CrOS x86_64 8172.45.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.64 Safari/537.36',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
+}
+
+the technique to make python scripts behave like browsers is using
+browser headers in requests.get(headers= headers)
+
+
+
+By default, request.get() returns in Bytes
+
+why to use if __name__ == "__main__"
+because if we execute the instance of a class
+when we import it in another python script there also it'll be executed
+
+In CSS
+if text align - center doesn't work
+use padding increase px
+
+On padding pls don't give one value it causes weird issues
+padding: y x;
+instead give 0 place u want
+
+if you get into any styling issue
+check via inspect in page
